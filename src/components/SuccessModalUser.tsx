@@ -14,12 +14,11 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
     message,
     userEmail 
 }) => {
-    if (!isOpen) return null;
+    if (!isOpen) return null;   
 
     const handleGoToLogin = () => {
         onClose();
-        // Redirige a la página de login
-        window.location.href = "https://diner-up.vercel.app/";
+       window.open("https://dinerup-app.vercel.app/", "_blank");
     };
 
     return (

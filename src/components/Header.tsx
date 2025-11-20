@@ -42,7 +42,7 @@ const Header: React.FC = () => {
   };
 
     const handleGoToLogin = () => {
-        window.location.href = "https://diner-up.vercel.app/";
+      window.open("https://dinerup-app.vercel.app/", "_blank");
     };
 
   const navItems = [
