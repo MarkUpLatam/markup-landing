@@ -26,10 +26,16 @@ export async function registerUser(
     body: JSON.stringify(data),
   });
 
-  if (!response.ok) {
-    const errorBody = await response.json().catch(() => ({}));
-    throw new Error(errorBody.message || "Error al registrar usuario");
-  }
+  const contentType = response.headers.get("content-type");
 
-  return await response.json();
+  if (contentType && contentType.includes("application/json")) {
+    const json = await response.json();
+    if (!response.ok) {
+      throw new Error(json.message || "Error al registrar usuario");
+    }
+    return json;
+  } else {
+    const text = await response.text();
+    throw new Error("Respuesta inesperada del servidor: " + text.slice(0, 100));
+  }
 }
