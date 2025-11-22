@@ -8,7 +8,7 @@ export interface RegisterPayload {
   city: string;
   password: string;
   amount: string;
-  role: "CLIENTE";
+  role: "CLIENT";
 }
 
 export interface RegisterResponse {

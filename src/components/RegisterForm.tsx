@@ -51,7 +51,7 @@ export default function RegisterForm({ type, onSuccess }: RegisterFormProps) {
       city: form.ciudad,
       password: generatedPassword,
       amount: form.monto,
-      role: "CLIENTE",
+      role: "client",
       requestType: type === "credito" ? "C" : "I" 
     };
 
