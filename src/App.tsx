@@ -1,22 +1,44 @@
-import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Header from './components/layout/Header';
-import Hero from './components/sections/Hero';
-import Services from './components/sections/Services';
 import Footer from './components/layout/Footer';
 import Popup from "./components/ui/Popup";
 
+import Home from "./pages/Home";
+import Terms from "./pages/Terms";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white font-sans">
-      <Popup />
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen bg-white font-sans">
+        <Popup />
+
+        <Routes>
+          {/* HOME */}
+          <Route 
+            path="/" 
+            element={
+              <>
+                <Header />
+                <Home />
+                <Footer />
+              </>
+            } 
+          />
+
+          {/* TÉRMINOS (sin header y sin footer) */}
+          <Route 
+            path="/terminos" 
+            element={
+              <>
+                <Terms />
+              </>
+            } 
+          />
+        </Routes>
+
+      </div>
+    </BrowserRouter>
   );
 }
 

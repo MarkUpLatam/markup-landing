@@ -6,6 +6,7 @@ import { registerUser } from "../../utils/api";
 
 
 
+
 // Generador de contraseña automática
 const generatePassword = () => {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
@@ -206,9 +207,13 @@ export default function RegisterForm({ type, onSuccess }: RegisterFormProps) {
         />
         <label className="text-sm text-gray-700 leading-tight">
           Acepto los{" "}
-          <span className="text-blue-600 underline cursor-pointer">
+          <a 
+            href="/terminos" 
+            target="_blank"
+            className="text-blue-600 underline cursor-pointer"
+          >
             términos y condiciones
-          </span>{" "}
+          </a>
           del manejo de mis datos personales.
         </label>
       </div>
