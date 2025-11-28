@@ -35,33 +35,33 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
                 </div>
 
                 {/* Título */}
-                <h2 className="text-3xl font-bold text-gray-900 mb-3">
-                    ¡Registro Exitoso!
+                <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">
+                    ¡Bienvenido a DinerUp!
                 </h2>
 
                 {/* Mensaje principal */}
                 <div className="mb-6 space-y-3">
-                    <p className="text-gray-700 text-lg leading-relaxed">
+                    <p className="text-gray-700 text-lg leading-relaxed text-center">
                         {message || "Tu cuenta ha sido creada exitosamente."}
                     </p>
                     
                     <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-100">
-                        <p className="text-sm text-gray-700 font-medium mb-2">
-                            📧 Ya puedes iniciar sesión
+                        <p className="text-l text-gray-700 font-medium mb-2">
+                            Consulta el estado de tu crédito o inversión.
                         </p>
                         <p className="text-sm text-gray-600">
-                            Usa tu cedula {userEmail && <span className="font-semibold text-blue-600">{userEmail}</span>} y la contraseña que registraste para acceder a tu cuenta y ver el estado de tu credito
+                            Usa tu cedula {userEmail && <span className="font-semibold text-blue-600">{userEmail}</span>} y la contraseña que enviaremos a tu correo electrónico paara acceder a tu cuenta.
                         </p>
                     </div>
                 </div>
 
                 {/* Botones de acción */}
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-2">
                     <button
                         onClick={handleGoToLogin}
                         className="group bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3.5 rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                     >
-                        Ver el estado de mi crédito
+                        Iniciar sesión
                         <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
                     </button>
                     
