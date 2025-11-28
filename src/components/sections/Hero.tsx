@@ -2,15 +2,10 @@ import React, { useState } from "react";
 import { ArrowRight, Sparkles} from "lucide-react";
 import headerImage from "../../images/header.jpg";
 import trendingIcon from "../../images/LogoDinerUp.png";
-import CooperativeFormModal from "../modals/CooperativeFormModal";
-import SuccessModal from "../modals/SuccessModal";
 import RegisterModal from "../modals/RegisterModal";
 
 const Hero: React.FC = () => {
 
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
   const [registerType, setRegisterType] = useState<"credito" | "inversion">("credito");
 
@@ -152,17 +147,6 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Modales */}
-      <CooperativeFormModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSuccess={() => setIsSuccessOpen(true)}
-      />
-
-      <SuccessModal
-        isOpen={isSuccessOpen}
-        onClose={() => setIsSuccessOpen(false)}
-        message="Tu cooperativa ha sido registrada correctamente. Nos pondremos en contacto contigo pronto."
-      />
 
       <RegisterModal
           isOpen={showRegister}

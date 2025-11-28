@@ -82,7 +82,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({
                 
                 @keyframes scale-in {
                     from { 
-                        opacity: 0;
+                        opacity: 0; st
                         transform: scale(0.9) translateY(20px);
                     }
                     to { 
