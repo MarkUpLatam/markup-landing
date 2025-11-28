@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sparkles, ArrowRight } from 'lucide-react';
-import RegisterModal from './RegisterModal';
-import LogoIcon from '../images/MarkupIconBlue.png';
+import RegisterModal from '../modals/RegisterModal';
+import LogoIcon from '../../images/LogoDinerUp.png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { ArrowRight, Sparkles} from "lucide-react";
-import headerImage from "../images/header.jpg";
-import trendingIcon from "../images/LogoDinerUp.png";
-import CooperativeFormModal from "./CooperativeFormModal";
-import SuccessModal from "./SuccessModal";
-import RegisterModal from "./RegisterModal";
+import headerImage from "../../images/header.jpg";
+import trendingIcon from "../../images/LogoDinerUp.png";
+import CooperativeFormModal from "../modals/CooperativeFormModal";
+import SuccessModal from "../modals/SuccessModal";
+import RegisterModal from "../modals/RegisterModal";
 
 const Hero: React.FC = () => {
 

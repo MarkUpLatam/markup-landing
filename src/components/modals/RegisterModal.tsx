@@ -1,7 +1,7 @@
 import { X, Shield, CheckCircle2, User } from "lucide-react";
-import LogoDinerUp from "../images/LogoDinerUp.png";
-import SuccessModal from "./SuccessModalUser";
-import RegisterForm from "./RegisterForm";
+import LogoDinerUp from "../../images/LogoDinerUp.png";
+import SuccessModal from "../modals/SuccessModal";
+import RegisterForm from "../forms/RegisterForm";
 import { useState, useEffect } from "react";
 
 interface RegisterModalProps {

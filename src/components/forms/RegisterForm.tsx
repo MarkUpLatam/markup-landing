@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Mail, Phone, User, CreditCard, MapPin, ChevronDown } from "lucide-react";
-import { useRegisterForm } from "../hooks/useRegisterForm";
-import { ciudadesPorProvincia } from "../data/ciudadesEcuador";
-import { registerUser } from "../utils/api";
+import { useRegisterForm } from "../../hooks/useRegisterForm";
+import { ciudadesPorProvincia } from "../../data/ciudadesEcuador";
+import { registerUser } from "../../utils/api";
 
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Footer from './components/Footer';
-import Popup from "./components/Popup";
+import Header from './components/layout/Header';
+import Hero from './components/sections/Hero';
+import Services from './components/sections/Services';
+import Footer from './components/layout/Footer';
+import Popup from "./components/ui/Popup";
 
 
 function App() {
